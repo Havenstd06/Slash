@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4eb6e3f719e2d56957fe902e20677a00",
+    "content-hash": "42d9951999aca5a70bba049248445fef",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -103,6 +103,69 @@
                 "math"
             ],
             "time": "2020-04-15T15:59:35+00:00"
+        },
+        {
+            "name": "browner12/helpers",
+            "version": "v3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/browner12/helpers.git",
+                "reference": "b34b7f8f2d3d24703764bf4d5ce7dbff763f08d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/browner12/helpers/zipball/b34b7f8f2d3d24703764bf4d5ce7dbff763f08d8",
+                "reference": "b34b7f8f2d3d24703764bf4d5ce7dbff763f08d8",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^6.0|^7.0",
+                "illuminate/contracts": "^6.0|^7.0",
+                "illuminate/support": "^6.0|^7.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "suggest": {
+                "moneyphp/money": "Money value object."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "browner12\\helpers\\HelperServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "browner12\\helpers\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew Brown",
+                    "email": "browner12@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "generic helpers",
+            "homepage": "https://github.com/browner12/helpers",
+            "keywords": [
+                "browner12",
+                "helpers"
+            ],
+            "time": "2020-03-03T16:33:22+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1131,6 +1194,66 @@
             ],
             "description": "A front-end framework for Laravel.",
             "time": "2020-07-16T14:43:11+00:00"
+        },
+        {
+            "name": "luispabon/favicon-finder",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luispabon/favicon-finder.git",
+                "reference": "aa42db5ad2dfcb2f96f8a2a06fa6a50ce0c4c444"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luispabon/favicon-finder/zipball/aa42db5ad2dfcb2f96f8a2a06fa6a50ce0c4c444",
+                "reference": "aa42db5ad2dfcb2f96f8a2a06fa6a50ce0c4c444",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "guzzlehttp/guzzle": "^6.4",
+                "php": ">=7.2.0",
+                "psr/simple-cache": "^1.0.1"
+            },
+            "require-dev": {
+                "guzzlehttp/psr7": "^1.6",
+                "infection/infection": "^0.14.2",
+                "phpstan/phpstan": "^0.11.19",
+                "phpunit/phpunit": "^8.4",
+                "symfony/var-dumper": "^4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FaviconFinder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Shiflett",
+                    "homepage": "http://shiflett.org/"
+                },
+                {
+                    "name": "Arthur Hoaro",
+                    "homepage": "http://hoa.ro"
+                },
+                {
+                    "name": "Luis Pabon",
+                    "homepage": "https://github.com/luispabon"
+                }
+            ],
+            "description": "PHP Library used to discover favicon from given URL",
+            "homepage": "https://github.com/luispabon/favicon",
+            "keywords": [
+                "favicon",
+                "finder",
+                "icon"
+            ],
+            "time": "2019-11-09T13:53:21+00:00"
         },
         {
             "name": "monolog/monolog",
