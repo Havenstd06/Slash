@@ -15,6 +15,7 @@
     
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @livewireStyles
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -30,10 +31,11 @@
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body class="bg-gray-50 h-screen antialiased leading-none">
+<body class="h-screen antialiased leading-none bg-gray-50">
     <div id="app">
         @include('partials.navbar')
         @yield('content')
     </div>
+    @livewireScripts
 </body>
 </html>
