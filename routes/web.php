@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
 
+Route::livewire('/', 'slash')->middleware('throttle:30,1')->name('home');
+
+Route::get('/{url}', 'UrlsController@shortenLink');
