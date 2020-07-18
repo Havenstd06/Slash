@@ -60,24 +60,24 @@
 
     @auth
     <div x-description="Mobile menu, toggle classes based on menu state." x-state:on="Menu open" x-state:off="Menu closed" :class="{ 'block': open, 'hidden': !open }" class="hidden md:hidden">
-    <div class="pt-4 pb-3 border-t border-gray-200">
-        <div class="flex items-center px-4 sm:px-6">
-        <div class="flex-shrink-0">
-            <img class="h-10 w-10 rounded-full" src="{{ url('img/profile.png') }}" alt="">
-        </div>
-        <div class="ml-3">
-            <div class="text-base font-medium leading-6 text-gray-800">{{ auth()->user()->name }}</div>
-            <div class="text-sm font-medium leading-5 text-gray-500">{{ auth()->user()->email }}</div>
-        </div>
-        </div>
-        <div class="mt-3">
-        <a href="#" class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-100 transition duration-150 ease-in-out sm:px-6">My links</a>
-        <a href="{{ route('logout') }}" class="mt-1 block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-100 transition duration-150 ease-in-out sm:px-6" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sign out</a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
-            {{ csrf_field() }}
-        </form>
-        </div>
-    </div>
+      <div class="pt-4 pb-3 border-t border-gray-200">
+          <div class="flex items-center px-4 sm:px-6">
+            <div class="flex-shrink-0">
+                <img class="h-10 w-10 rounded-full" src="{{ url('img/profile.png') }}" alt="">
+            </div>
+            <div class="ml-3">
+                <div class="text-base font-medium leading-6 text-gray-800">{{ auth()->user()->name }}</div>
+                <div class="text-sm font-medium leading-5 text-gray-500">{{ auth()->user()->email }}</div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <a href="#" class="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-100 transition duration-150 ease-in-out sm:px-6">My links</a>
+            <a href="{{ route('logout') }}" class="mt-1 block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 focus:outline-none focus:text-gray-800 focus:bg-gray-100 transition duration-150 ease-in-out sm:px-6" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Sign out</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                {{ csrf_field() }}
+            </form>
+          </div>
+      </div>
     @endauth
     </div>
 </nav>
