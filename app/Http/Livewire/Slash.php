@@ -11,6 +11,7 @@ class Slash extends Component
 {
     public $original_url;
     public $originalUrlValid;
+    public $shortenedUrl;
 
     public function verifyUrl()
     {
@@ -18,6 +19,12 @@ class Slash extends Component
         if (! is_null($this->original_url)) {
             // Is valid URL
             if (filter_var($this->original_url, FILTER_VALIDATE_URL) == false) {
+                $this->originalUrlValid = false;
+
+                return;
+            }
+
+            if (!preg_match( '/^(http|https):\\/\\/[a-z0-9_]+([\\-\\.]{1}[a-z_0-9]+)*\\.[_a-z]{2,5}'.'((:[0-9]{1,5})?\\/.*)?$/i' ,$this->original_url)) {
                 $this->originalUrlValid = false;
 
                 return;
@@ -37,10 +44,12 @@ class Slash extends Component
         ]);
 
         $url = new Url();
-        $url->original = $this->original_url;
-        $url->short = Str::random(6);
+        $url->original_url = $this->original_url;
+        $url->short_url = Str::random(6);
         $url->user_id = $user->id;
         $url->save();
+
+        $this->shortenedUrl = $url->getLink();
     }
 
     public function render()
