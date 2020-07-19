@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }} — URL Shortener Website built with Laravel</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -32,11 +32,16 @@
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body class="h-screen antialiased leading-none bg-gray-50">
-    <div id="app">
-        @include('partials.navbar')
+<body class="flex flex-col h-full bg-gray-50">
+
+    @include('partials.navbar')
+
+    <div id="app" class="flex-1">
         @yield('content')
     </div>
+
+    @include('partials.footer')
+
     @livewireScripts
 </body>
 </html>
