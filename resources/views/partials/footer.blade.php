@@ -1,5 +1,5 @@
-<div class="bg-white">
-  <div class="max-w-screen-xl px-4 py-6 mx-auto sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+<div class="z-40 bg-white">
+  <div class="max-w-screen-xl px-4 py-3 mx-auto md:py-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
     <div class="flex justify-center md:order-2">
       <a href="https://github.com/XKIS/Slash" target="_nofollow" class="inline-flex ml-6 text-gray-400 hover:text-gray-500">
         <span class="mr-1">Source</span>
@@ -8,7 +8,7 @@
         </svg>
       </a>
     </div>
-    <div class="mt-8 md:mt-0 md:order-1">
+    <div class="mt-0 md:order-1">
       <p class="text-base leading-6 text-center text-gray-400">
         {{ date('Y') }} - <a href="https://github.com/XKIS" target="_nofollow" class="text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-700">XKIS</a> - Project development group.
       </p>
