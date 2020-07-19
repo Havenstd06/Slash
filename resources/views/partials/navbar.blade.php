@@ -18,8 +18,8 @@
         </div>
         @endauth
           <a class="flex items-center flex-shrink-0" href="{{ route('home') }}">
-            <img class="w-auto h-9" src="{{ url('/img/logo-icon.png') }}" alt="{{ config('app.name') }} logo">
-            <h1 class="ml-1.5 font-semibold text-2xl text-gray-800 uppercase">{{ config('app.name') }}</h1>
+            <img class="w-auto h-7 md:h-9" src="{{ url('/img/logo-icon.png') }}" alt="{{ config('app.name') }} logo">
+            <h1 class="ml-1.5 font-semibold text-xl md:text-2xl text-gray-800 uppercase">{{ config('app.name') }}</h1>
             <small class="ml-1 text-sm text-gray-700">Beta</small>
           </a>
         </div>
@@ -50,7 +50,7 @@
               <a href="{{ route('login') }}" class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50">
                 <span>Login</span>
               </a>
-              <a href="{{ route('register') }}" class="relative inline-flex items-center px-4 py-2 ml-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
+              <a href="{{ route('register') }}" class="relative inline-flex items-center px-4 py-2 text-sm font-medium leading-5 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md shadow-sm md:ml-2 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
                 <span>Register</span>
               </a>
           </div>
