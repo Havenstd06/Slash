@@ -10,7 +10,7 @@
     </div>
     <div class="mt-8 md:mt-0 md:order-1">
       <p class="text-base leading-6 text-center text-gray-400">
-        {{ date('Y') }} - <a href="https://xk.is" target="_nofollow" class="text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-700">XKIS</a> - Project development group.
+        {{ date('Y') }} - <a href="https://github.com/XKIS" target="_nofollow" class="text-indigo-600 transition duration-150 ease-in-out hover:text-indigo-700">XKIS</a> - Project development group.
       </p>
     </div>
   </div>
