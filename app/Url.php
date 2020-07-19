@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\User;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,7 +24,8 @@ class Url extends Model
 
     public function getLink() 
     {
-        return url('/') . '/' .$this->short_url;
+        $user = $user = (auth()->user()) ? auth()->user() : User::findOrFail(1);
+        return $user->domain . '/' .$this->short_url;
     }
 
     public function getFavicon()

@@ -23,9 +23,13 @@
             </div>
           </div>
         </header>
+        <div id="settings">
+          <h1 class="px-4 mb-2 text-lg font-medium leading-7 text-gray-800 sm:px-6">Settings</h1>
+          @livewire('user-settings-dashboard')
+        </div>
         <div id="links">
           <h1 class="px-4 mb-2 text-lg font-medium leading-7 text-gray-800 sm:px-6">My Last 5 Links</h1>
-          @livewire('user-link-dashboard')
+          @livewire('user-links-dashboard')
         </div>
       </div>
     </div>
