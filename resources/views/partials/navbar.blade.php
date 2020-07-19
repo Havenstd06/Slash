@@ -20,6 +20,7 @@
           <a class="flex items-center flex-shrink-0" href="{{ route('home') }}">
             <img class="w-auto h-9" src="{{ url('/img/logo-icon.png') }}" alt="{{ config('app.name') }} logo">
             <h1 class="ml-1.5 font-semibold text-2xl text-gray-800 uppercase">{{ config('app.name') }}</h1>
+            <small class="ml-1 text-sm text-gray-700">Beta</small>
           </a>
         </div>
         <div class="flex items-center">
