@@ -66,9 +66,11 @@
                 </button>
                 </div>
                 <div class="flex flex-1 w-0 -ml-px">
-                <a href="{{ findUrl($shortenedUrl)->original_url }}" class="relative inline-flex items-center justify-center flex-1 w-0 py-4 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out border border-transparent rounded-br-lg hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10">
-                    <span class="ml-3 truncate" title="{{ findUrl($shortenedUrl)->original_url }}">{{ findUrl($shortenedUrl)->original_url }}</span>
-                </a>
+                <button id="copy" data-clipboard-text="{{ findUrl($shortenedUrl)->original_url }}" class="relative inline-flex items-center justify-center flex-1 w-0 py-4 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out border border-transparent rounded-br-lg hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10">
+                    <span class="inline-flex ml-3 truncate" title="{{ findUrl($shortenedUrl)->original_url }}">
+                        <svg aria-hidden="true" data-prefix="far" data-icon="copy" class="w-4 mr-1 text-gray-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M434 66l-52-52a48 48 0 00-34-14H176c-27 0-48 21-48 48v48H48c-27 0-48 21-48 48v320c0 27 21 48 48 48h224c27 0 48-21 48-48v-48h80c27 0 48-21 48-48V100a48 48 0 00-14-34zM266 464H54a6 6 0 01-6-6V150a6 6 0 016-6h74v224c0 27 21 48 48 48h96v42a6 6 0 01-6 6zm128-96H182a6 6 0 01-6-6V54a6 6 0 016-6h106v88c0 13 11 24 24 24h88v202a6 6 0 01-6 6zm6-256h-64V48h10l4 2 48 48a6 6 0 012 4v10z"/></svg>
+                        {{ findUrl($shortenedUrl)->original_url }}</span>
+                </button>
                 </div>
             </div>
         </div>
