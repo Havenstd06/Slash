@@ -38,6 +38,10 @@
 
     <div id="app" class="flex-1">
         @yield('content')
+
+        @auth
+        @include('partials.dashboard')
+        @endauth
     </div>
 
     @include('partials.footer')

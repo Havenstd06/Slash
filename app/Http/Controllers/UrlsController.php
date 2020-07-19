@@ -10,6 +10,7 @@ class UrlsController extends Controller
     {
         return view('home');
     }
+
     public function shortenLink(Url $url)
     {
         return redirect($url->original_url);
