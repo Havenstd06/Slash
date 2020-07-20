@@ -5,7 +5,6 @@
             <div class="flex items-center">
                 <div class="flex-1">
                     <select wire:model="domain" name="domain" id="domain" class="block w-full py-2 pl-3 pr-10 text-base leading-6 border-gray-300 form-select focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5">
-                        {{-- <option>Other domain</option> --}}
                         @foreach (\App\Domain::all() as $domain)
                         <option value="{{ $domain->url }}" {{ $domain->url == $user->domain ? 'selected' : ''}}>
                             {{ $domain->name }}
