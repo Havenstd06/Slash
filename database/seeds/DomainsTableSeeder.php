@@ -18,13 +18,6 @@ class DomainsTableSeeder extends Seeder
             'updated_at' => '2020-07-19 18:54:04',
         ]);
 
-        \DB::table('domains')->insert([
-            'name' => 's.xk.is',
-            'url' => 'https://s.xk.is',
-            'created_at' => '2020-07-19 18:54:04',
-            'updated_at' => '2020-07-19 18:54:04',
-        ]);
-
         // Add your additional domains here previously configured with full redirection
     }
 }
