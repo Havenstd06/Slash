@@ -12,7 +12,7 @@
 <hr>
 
 ## Installation
-* clone the repository: `git clone https://github.com/XKIS/Slash`
+* clone the repository: `git clone https://github.com/Havenstd06/Slash`
 * create a database
 * install: `composer install`
 * create configuration env file `.env` refer to `.env.example`
